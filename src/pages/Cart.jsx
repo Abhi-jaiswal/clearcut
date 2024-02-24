@@ -19,12 +19,10 @@ const Cart = () => {
   {
     cart.length > 0 ? 
     (
-      <div className="flex flex-col min-h-[70vh] relative">
+      <div className="flex flex-col sm:min-h-[70vh] relative">
 
           {/* cart items list  */}
-          <div className="grid xs:gridcols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 
-          w-6/12 space-y-10 absolute top-0 left-40 h-[80vh]
-          overflow-scroll example">
+          <div className="grid xl:w-6/12 space-y-10 xl:absolute xl:top-0 xl:left-40 xl:h-[80vh] overflow-scroll example mx-auto">
             {
               cart.map((item,index) => {
                 return <CartItem key={item.id} item={item} itemIndex={index} className="w-full p-10"/>   
@@ -33,7 +31,7 @@ const Cart = () => {
           </div>
 
           {/*  cart summary */}
-          <div className="flex flex-col min-h-[80vh] absolute bottom-0 top-0 right-20 px-25 w-4/12">
+          <div className="flex flex-col min-h-[80vh] xl:absolute bottom-0 top-0 right-20 px-25 xl:w-4/12 w-full px-auto">
 
               <div className="flex flex-col">
                 <div className="text-green-700 ">Your Cart</div>
