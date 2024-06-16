@@ -8,7 +8,7 @@ import { BsDribbble } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className='text-[#60637B]'>
-      <div className='mx-[144px] mt-[96px] px-[48px] flex justify-between'>
+      <div className='mt-[78px] mx-[25px] px-[39px] lg:mx-[11.5px] xl:mx-[144px] lg:mt-[96px] lg:px-[48px] flex flex-col lg:flex-row justify-between'>
         <div className='w-[528px] flex flex-col'>
           <div className='text-[20px]'>
           Got a Project?
@@ -22,12 +22,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='w-[528px] flex flex-col items-end'>
+        <div className='lg:w-[528px] flex flex-col lg:items-end my-[39px] lg:m-0'>
           <div>
             <img src='./logo.svg' className='w-[200px] h-[48px] hover:opacity-90 cursor-pointer'/>
           </div>
           <div className='mt-[32px] flex text-[#A3A5B8] '>
-            <a className='ml-[32px] hover:scale-90 cursor-pointer transition-all duration-500'>
+            <a className='lg:ml-[32px] hover:scale-90 cursor-pointer transition-all duration-500'>
             <LuFacebook className='w-[28px] h-[28px]'/>
             </a>
             <a className='ml-[32px] hover:scale-90 cursor-pointer transition-all duration-500'>
@@ -46,12 +46,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='mx-[144px] mt-[80px] pb-[30px] px-[48px] flex text-[#A3A5B8] text-[14px] justify-between'>
-        <div className='w-[528px]'>
+      <div className='mx-[25px] px-[39px] mt-[39px] xl:mx-[144px] xl:mt-[80px] pb-[30px] xl:px-[48px] flex text-[#A3A5B8] text-[14px] justify-between xl:flex-row flex-col-reverse'>
+        <div className='xl:w-[528px] py-[13px] xl:p-0'>
         © Copyright 2019
         </div>
 
-        <div className='w-[528px] text-right'>
+        <div className='xl:w-[528px] xl:text-right py-[39px] xl:py-0'>
         C/o Cuboft Marketing & Software Solutions Pvt. Ltd. <br/>
         CIN: U72200TG2015PTC101100
         </div>

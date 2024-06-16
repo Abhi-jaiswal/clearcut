@@ -6,7 +6,7 @@ import SayHello from "./pages/SayHello";
 
 
 const App = () => {
-  return (<div className="bg-[#18181C] w-full">
+  return (<div className="bg-[#18181C] w-full overflow-hidden">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}/>
