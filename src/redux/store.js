@@ -1,11 +1,11 @@
 import React from 'react'
 import { configureStore } from '@reduxjs/toolkit'
-import { CartSlice } from './Slices/CartSlice'
+import NameReducer from './Slices/NameSlice'
 
 export const store = configureStore({
     reducer:{
-        cart: CartSlice.reducer,
-    }
+        Name:NameReducer,
+    },
 });
 
 export default store

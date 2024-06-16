@@ -1,34 +1,26 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
-import {FaShoppingCart} from 'react-icons/fa'
-import { useSelector } from 'react-redux'
 
 const Navbar = () => {
-  const {cart} = useSelector((state) => state);
-
   return (   
-    <div>
-      <div className="flex items-center justify-between h-20 max-w-6xl mx-auto">
-        <NavLink to="/">
-            <div className="ml-5">
-                <img src="../logo.png" className="h-14"/>
-            </div>
-        </NavLink>
-        <div className="flex items-center font-medium text-slate-100 mr-5 space-x-6">
-            <NavLink to ="/">
-            <p>Home</p>
-            </NavLink>
-            <NavLink to ="/cart">
-                <div className="relative">
-                <FaShoppingCart className="text-2xl"/>
-                {
-                  cart.length>0 && 
-                  <span className="absolute -top-1 -right-2 bg-green-600 text-xs w-5 h-5 flex justify-center items-center animate-bounce rounded-full text-white"> 
-                  {cart.length} </span>
-                }
-                </div>
-            </NavLink>
+    <div className='mx-[181.63px] flex flex-col sticky top-0 z-10'>
+      <div className='flex justify-between items-center py-[16px] px-[8px] pt-[32px] top-0'>
+
+        <div className='hover:opacity-70 cursor-pointer'>
+          <img src='./logo.svg' className='w-[116px] h-[31px]'/>
         </div>
+
+        <div className='flex gap-3'>
+          <a className='text-black bg-slate-200 px-[48px] py-[8px] rounded-xl mx-[8px]' href='/say-hello'>
+            say hello
+          </a>
+          <div className='flex gap-3 items-center px-[8px] py-[4px] hover:opacity-70 cursor-pointer'>
+            <div className='text-white text-xs'>
+              Menu
+            </div>
+            <img src='./navlink.svg' className='w-6'/>
+          </div>
+        </div>
+        
       </div>
     </div>
   )
