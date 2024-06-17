@@ -17,7 +17,7 @@ const AudioToText = () => {
     <div className='text-xl text-center mt-[20px]'>
         Voice to text converter
     </div>
-      <div className='bg-[#18181C] text-white min-h-[300px] w-[550px] mt-[10px]'>
+      <div className='bg-[#18181C] text-white min-h-[300px] w-[80vw] mt-[10px]'>
         {transcript}
       </div>
 
