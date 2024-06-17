@@ -16,9 +16,9 @@ const Footer = () => {
 
           <div className='animation2 flex hover:cursor-pointer '>
             <div className='w-[8px] h-[66.24px] bg-[#60637B]'></div>
-            <div className='my-auto text-[30px] text-bold pl-[12px] text-[#A3A5B8]'>
+            <a className='my-auto text-[30px] text-bold pl-[12px] text-[#A3A5B8]' href='/say-hello'>
               Get in Touch
-            </div>
+            </a>
           </div>
         </div>
 
